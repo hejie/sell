@@ -7,7 +7,7 @@ import com.wdlily.sell.vo.ResultVO;
  * @description 返回结果的工具类
  * @date 2017/10/21 23:20
  */
-public class ResponseUtil {
+public class ResultVOUtil {
 
     //成功-有结果
     public static ResultVO success(Object object){

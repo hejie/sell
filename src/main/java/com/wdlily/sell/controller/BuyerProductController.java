@@ -4,7 +4,7 @@ import com.wdlily.sell.dataobject.ProductCategory;
 import com.wdlily.sell.dataobject.ProductInfo;
 import com.wdlily.sell.service.inter.ProductCategoryService;
 import com.wdlily.sell.service.inter.ProductInfoService;
-import com.wdlily.sell.utils.ResponseUtil;
+import com.wdlily.sell.utils.ResultVOUtil;
 import com.wdlily.sell.vo.ProductInfoVO;
 import com.wdlily.sell.vo.ProductVO;
 import com.wdlily.sell.vo.ResultVO;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -67,7 +66,7 @@ public class BuyerProductController {
             productVOList.add(productVO);
         }
 
-        return ResponseUtil.success(productVOList);
+        return ResultVOUtil.success(productVOList);
     }
 
 }

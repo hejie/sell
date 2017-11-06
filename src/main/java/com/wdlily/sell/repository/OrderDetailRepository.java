@@ -3,6 +3,8 @@ package com.wdlily.sell.repository;
 import com.wdlily.sell.dataobject.OrderDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 /**
  * @author wangDi
  * @description
@@ -10,4 +12,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface OrderDetailRepository extends JpaRepository<OrderDetail, String> {
 
+    List<OrderDetail> findByOrderId(String orderId);
 }
